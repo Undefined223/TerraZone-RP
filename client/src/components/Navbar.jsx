@@ -37,7 +37,7 @@ const Navbar = () => {
 
                         <Box className='logo' display="flex" >
                             <Image src={TerraZoneLogo} />
-                            <Text display='flex' alignItems="center" color='white'>Terrazone RP</Text>
+                            <Text display='flex' alignItems="center" color='white' className='tz' >Terrazone RP</Text>
 
                         </Box>
 
