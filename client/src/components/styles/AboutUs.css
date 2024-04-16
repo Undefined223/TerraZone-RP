@@ -1,0 +1,42 @@
+.AboutUs {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+
+.AboutUs .text-wrapper {
+    
+    color: white;
+    text-align: left;
+    padding-right: 3vw;
+    width: 50%;
+    font-size: clamp(12px, 2vw, 32px);
+
+
+}
+.AboutUs .text-wrapper p{
+    font-weight: 100;
+}
+.AboutUs .text-wrapper  h1 span {
+
+
+    /* Your gradient color styles here */
+    background: linear-gradient(90deg, rgba(196, 183, 244, 1) 0%, rgba(40, 134, 171, 1) 98%, rgba(0, 0, 0, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 425px) {
+    .AboutUs{
+        justify-content: center;
+    }
+    .AboutUs .text-wrapper{
+        text-align: center;
+        width: 75%;
+    }
+}

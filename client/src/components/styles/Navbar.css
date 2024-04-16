@@ -1,0 +1,109 @@
+.navbar-container {
+    position: relative;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevent scrollbars */
+}
+
+.video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    width: 100vw;
+    /* Make the wrapper full width of the viewport */
+    height: 100vh;
+    /* Make the wrapper full height of the viewport */
+    z-index: 4;
+    /* clip-path: polygon(50% 0%, 71% 0, 100% 0, 96% 9%, 79% 15%, 62% 20%, 0 54%, 0 29%, 0 0, 28% 0); */
+    overflow: hidden;
+    /* Hide any overflowing shadow */
+}
+
+.video-element {
+    width: 100%;
+    /* Make the video full width */
+    height: 100%;
+    /* Make the video full height */
+    object-fit: cover;
+    /* Ensure the entire video is visible within the container */
+    display: block;
+    /* Make sure it's a block element */
+    margin: auto;
+    /* Center the video horizontally */
+    position: absolute;
+    /* Position it absolutely within the wrapper */
+    top: 0;
+    /* Position from the top */
+    left: 0;
+    /* Position from the left */
+    transform: translateY(-43%);
+    /* Center it vertically */
+
+
+}
+
+.nav {
+    position: absolute;
+    height: 7vh;
+    width: 100%;
+    /* background: transparent; */
+    backdrop-filter: blur(10px);
+    /* background-color: red; */
+    z-index: 5;
+
+}
+
+.first-box,
+.second-box {
+    position: relative;
+    z-index: 9999999999;
+}
+
+.nav-list {
+    gap: 100px;
+}
+
+.nav-list ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+    gap: 10px;
+    margin: 4px;
+    border: solid px rgb(164, 80, 241);
+
+}
+
+.nav-list ul li {
+    list-style-type: none;
+    text-align: center;
+    display: block;
+}
+
+.nav-list ul li a {
+    text-decoration: none;
+    padding: 0 40px;
+    color: white;
+    display: block;
+}
+
+.nav-list ul li a .icon {
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    font-size: larger;
+}
+
+.nav-list ul li a.active {
+    color: purple;
+}
+
+
