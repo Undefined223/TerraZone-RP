@@ -5,6 +5,46 @@
   
 }
 
+.App-Book {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+article {
+  position: relative;
+}
+
+article h1 {
+  margin: 10pt;
+}
+.App-Title {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  top: 0;
+}
+
+.App-Page-Last {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.App-Page-Last h1 {
+  font-size: 3em;
+}
+
+
+
 #webgi-canvas {
   width: 100%;
   height: 100%;

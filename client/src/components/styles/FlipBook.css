@@ -1,0 +1,59 @@
+.Book {
+    font-family: sans-serif;
+    text-align: center;
+    outline: none;
+    background: none !important;
+}
+
+.App-Book {
+    margin: 1in auto;
+    background-color: transparent !important;
+}
+
+article {
+    position: relative;
+}
+
+article h1 {
+    margin: 10pt;
+    position: relative;
+}
+.App-Book, .App-Book .ReactFlipPage {
+    background-color: transparent !important;
+}
+
+.App-Title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    background-color: #ff04;
+}
+
+.App-Page-Last {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #fff5f5;
+}
+
+.App-Page-Last h1 {
+    font-size: 3em;
+}
+
+.iframe-container {
+    position: relative;
+    height: 100vh; /* Adjust as needed */
+    margin-top: 60px;
+    background: transparent;
+  }
+  
