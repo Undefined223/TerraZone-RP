@@ -8,28 +8,28 @@
 
 .social-icon {
     color: #ffffff;
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    transition: all 0.3s ease-in-out; 
 }
 
 .discord:hover {
-    color: #5865f2; /* Discord color */
+    color: #5865f2;
     cursor: pointer;
 }
 
 .instagram:hover {
-    color: #bc2a8d; /* Instagram color */
+    color: #bc2a8d; 
     cursor: pointer;
 
 }
 
 .tiktok:hover {
-    color: #69c9d0; /* TikTok color */
+    color: #69c9d0; 
     cursor: pointer;
 
 }
 
 .youtube:hover {
-    color: #ff0000; /* YouTube color */
+    color: #ff0000; 
     cursor: pointer;
 
 }

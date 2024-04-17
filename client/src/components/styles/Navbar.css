@@ -7,7 +7,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    /* Prevent scrollbars */
 }
 
 .video-wrapper {
@@ -16,34 +15,21 @@ body {
     left: 0;
     opacity: 0.2;
     width: 100vw;
-    /* Make the wrapper full width of the viewport */
     height: 100vh;
-    /* Make the wrapper full height of the viewport */
     z-index: 4;
-    /* clip-path: polygon(50% 0%, 71% 0, 100% 0, 96% 9%, 79% 15%, 62% 20%, 0 54%, 0 29%, 0 0, 28% 0); */
     overflow: hidden;
-    /* Hide any overflowing shadow */
 }
 
 .video-element {
     width: 100%;
-    /* Make the video full width */
     height: 100%;
-    /* Make the video full height */
     object-fit: cover;
-    /* Ensure the entire video is visible within the container */
     display: block;
-    /* Make sure it's a block element */
     margin: auto;
-    /* Center the video horizontally */
     position: absolute;
-    /* Position it absolutely within the wrapper */
     top: 0;
-    /* Position from the top */
     left: 0;
-    /* Position from the left */
     transform: translateY(-43%);
-    /* Center it vertically */
 
 
 }
@@ -52,9 +38,7 @@ body {
     position: absolute;
     height: 7vh;
     width: 100%;
-    /* background: transparent; */
     backdrop-filter: blur(10px);
-    /* background-color: red; */
     z-index: 5;
 
 }

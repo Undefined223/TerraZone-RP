@@ -25,7 +25,6 @@
 .AboutUs .text-wrapper  h1 span {
 
 
-    /* Your gradient color styles here */
     background: linear-gradient(90deg, rgba(196, 183, 244, 1) 0%, rgba(40, 134, 171, 1) 98%, rgba(0, 0, 0, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
