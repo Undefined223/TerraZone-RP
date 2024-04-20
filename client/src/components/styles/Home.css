@@ -4,6 +4,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
 }
 
 .home .text-wrapper {
@@ -14,6 +15,7 @@
     flex-direction: column;
     gap: 10px;
     font-size: clamp(12px, 3vw, 32px);
+    z-index: 9;
 }
 
 .home .text-wrapper .first-box {
@@ -22,6 +24,7 @@
 }
 
 .home .text-wrapper .first-box p span {
+    
 
 
     background: linear-gradient(90deg, rgba(196, 183, 244, 1) 0%, rgba(40, 134, 171, 1) 98%, rgba(0, 0, 0, 1) 100%);
@@ -43,7 +46,7 @@
     border: none;
     color: #fff;
     cursor: pointer;
-    background-color: #2f1453;
+    background: #2f1453;
     transition: all 0.2s ease;
 }
 
@@ -59,7 +62,7 @@
     left: 50%;
     height: 100%;
     transform: translateX(-50%);
-    z-index: -1000;
+    z-index: 8;
     background-repeat: no-repeat;
 }
 
@@ -139,6 +142,7 @@
         align-items: center;
         text-align: center;
         width: 100%;
+        z-index: 9;
     }
 
     .abt-but {

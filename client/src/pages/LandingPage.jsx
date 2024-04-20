@@ -4,6 +4,7 @@ import Home from '../components/Landing/Home'
 import AboutUs from '../components/Landing/AboutUs'
 import Navbar from '../components/Navbar'
 import WebgiViewer from '../components/WebgiViewer'
+
 const LandingPage = () => {
     return (
         <div >

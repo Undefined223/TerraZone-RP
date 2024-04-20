@@ -3,6 +3,14 @@
     text-align: center;
     outline: none;
     background: none !important;
+    z-index: 999999999999999999999999999;
+}
+
+.backstory {
+    background: linear-gradient(90deg, rgba(196, 183, 244, 1) 0%, rgba(40, 134, 171, 1) 98%, rgba(0, 0, 0, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .App-Book {
@@ -18,7 +26,14 @@ article h1 {
     margin: 10pt;
     position: relative;
 }
-.App-Book, .App-Book .ReactFlipPage {
+
+.App-Book,
+.App-Book .ReactFlipPage {
+    background-color: transparent !important;
+}
+
+.ReactFlipPage,
+.ReactFlipPage-Page {
     background-color: transparent !important;
 }
 
@@ -44,16 +59,38 @@ article h1 {
     height: 100%;
     width: 100%;
     background-color: #fff5f5;
+    /* Ensure this color is correct */
 }
 
 .App-Page-Last h1 {
     font-size: 3em;
 }
 
-.iframe-container {
-    position: relative;
-    height: 100vh; /* Adjust as needed */
-    margin-top: 60px;
-    background: transparent;
-  }
-  
+
+/* Make .App-Book and its children have a transparent background */
+.App-Book {
+    background-color: transparent !important;
+    width: 40% !important;
+}
+
+.App-Book * {
+    background-color: transparent !important;
+}
+
+@media only screen and (max-width: 700px) {
+    .App-Book {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .App-Book {
+        width: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .App-Book {
+        width: 80% !important;
+    }
+}

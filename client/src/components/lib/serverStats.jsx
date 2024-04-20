@@ -3,6 +3,7 @@ import axios from 'axios'
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Box } from '@chakra-ui/react'
+import { faUserGroup } from '@fortawesome/free-solid-svg-icons';
 
 
 const ServerStats = ({ bot }) => {
@@ -14,8 +15,8 @@ const ServerStats = ({ bot }) => {
         const fetchData = async () => {
             try {
                 const server = await axios.get('https://servers-frontend.fivem.net/api/servers/single/kd9rgr')
-             
-                
+
+
                 setServerData(server.data.Data);
                 console.log(server.data.Data)
             } catch (err) {
@@ -31,9 +32,9 @@ const ServerStats = ({ bot }) => {
     return (
         <Box className="server-stats" display='flex' alignItems='center' color="white">
             <p>
-             {serverData?.clients} / <FontAwesomeIcon icon={faUser} style={{color: "#ffffff",}} />
+                {serverData?.clients} / <FontAwesomeIcon icon={faUserGroup} style={{ color: "#ffffff", }} />
             </p>
-        
+
         </Box>
     );
 };

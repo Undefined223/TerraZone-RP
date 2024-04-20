@@ -1,0 +1,71 @@
+.discover span {
+    background: linear-gradient(90deg, rgba(196, 183, 244, 1) 0%, rgba(40, 134, 171, 1) 98%, rgba(0, 0, 0, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.discover {
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 0 5% 0 5%;
+}
+
+.discover p {
+    font-size: large;
+    font-weight: normal;
+    color: rgb(160, 159, 159);
+}
+
+.about-text {
+    width: 40%;
+}
+
+.about-image {
+    width: 60%;
+    margin: 0 auto;
+    /* Center the container horizontally */
+    text-align: center;
+}
+
+.about-iamge .about-img {
+    width: 100%;
+    object-fit: fill;
+   
+
+}
+
+
+@media only screen and (max-width: 800px) {
+    .discover {
+        font-size: medium;
+    }
+
+    .discover p {
+        font-size: small;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .discover {
+        flex-direction: column-reverse;
+        gap: 5%;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-img {
+        margin: 0 auto;
+        position: relative;
+        transform: translatex(-8%);
+    }
+
+}

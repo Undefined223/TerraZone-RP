@@ -6,7 +6,6 @@
     align-items: center;
     position: absolute;
     z-index: 2;
-    opacity: 0;
 }
 
 .AboutUs .text-wrapper {
@@ -16,6 +15,7 @@
     padding-right: 3vw;
     width: 50%;
     font-size: clamp(12px, 2vw, 32px);
+    
 
 
 }
@@ -29,6 +29,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
 
 @media only screen and (max-width: 425px) {
     .AboutUs{

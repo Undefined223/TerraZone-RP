@@ -6,7 +6,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
 }
 
 .video-wrapper {
@@ -14,10 +15,11 @@ body {
     top: 0;
     left: 0;
     opacity: 0.2;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     z-index: 4;
     overflow: hidden;
+    mix-blend-mode: screen;
 }
 
 .video-element {
@@ -30,6 +32,7 @@ body {
     top: 0;
     left: 0;
     transform: translateY(-43%);
+    z-index: 1;
 
 
 }
@@ -46,7 +49,6 @@ body {
 .first-box,
 .second-box {
     position: relative;
-    z-index: 9999999999;
 }
 
 .nav-list {
@@ -92,3 +94,27 @@ body {
 
 
 
+@media only screen and (max-width: 900px) {
+    .nav .logo {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .nav-list{
+        gap: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-list ul li a{
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .nav-list ul li a{
+        padding: 0 10px;
+    }
+}

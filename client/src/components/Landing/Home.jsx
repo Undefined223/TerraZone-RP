@@ -1,16 +1,16 @@
 import { Box } from '@chakra-ui/react';
 import React, { useEffect } from 'react';
 import '../styles/home.css';
-import SocialList from '../SocialList';
+import SocialList from './SocialList';
 import Navbar from '../Navbar';
 
 const Home = () => {
-    const handleClick = () => {
-        const AboutUsSection = document.getElementById('about-us');
-        if (AboutUsSection) {
-            AboutUsSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+    // const handleClick = () => {
+    //     const AboutUsSection = document.getElementById('about-us');
+    //     if (AboutUsSection) {
+    //         AboutUsSection.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    // };
     return (
         <Box className='home'>
 
@@ -21,10 +21,10 @@ const Home = () => {
                 <Box className='second-box'>
                     <p>Dive into our immersive GTA V role-playing experience, where you shape the story. Join a vibrant community, explore endless possibilities, and make your mark in the dynamic world of Los Santos. Your journey begins here</p>
 
-                    <Box display="flex" alignItems='center' justifyContent='space-between'>
-                        <button className="abt-but" onClick={handleClick}>
+                    <Box display="flex" alignItems='center' justifyContent='flex-end' margin={3}>
+                        {/* <button className="abt-but" onClick={handleClick} style={{lineHeight:'normal', fontSize:'medium'}}>
                             About Us
-                        </button>
+                        </button> */}
                         <SocialList />
                     </Box>
                 </Box>

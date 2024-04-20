@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/SocialList.css';
+import '../styles/SocialList.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDiscord, faInstagram, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
 

@@ -1,15 +1,15 @@
+// Background.js
+
 import React from 'react';
 import Starfield from 'react-starfield';
 
 const Background = () => {
     return (
-        <div>
+        <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
             <Starfield
-                starCount={1000}
+                starCount={4000}
                 speedFactor={0.08}
-                backgroundColor="#070023"
-                // backgroundColor="black"
-
+                backgroundColor="#0C0037"
             />
         </div>
     );
