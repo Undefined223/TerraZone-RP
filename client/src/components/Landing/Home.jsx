@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import React, { useEffect } from 'react';
-import '../styles/home.css';
+import '../styles/Home.css';
 import SocialList from './SocialList';
 import Navbar from '../Navbar';
 
