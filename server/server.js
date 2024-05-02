@@ -7,6 +7,8 @@ connectDB();
 const path = require('path');
 const { storage, upload } = require("./utils/storage");
 const userRoutes = require('./routes/user.routes')
+const productRoutes = require('./routes/product.routes')
+
 
 
 
@@ -20,11 +22,15 @@ app.use(
     })
 );
 
-const { registerUser  } = require("./controllers/user.controller");
+const { registerUser } = require("./controllers/user.controller");
+const { createProduct } = require("./controllers/product.Controller");
 app.post('/api/user/', upload.single('pic'), registerUser);
+app.post('/api/user/', upload.single('pic'), createProduct);
+
 
 
 app.use("/api/user", userRoutes);
+app.use("/api/products", productRoutes)
 
 app.use('/uploads/', express.static(path.join(__dirname, 'uploads/')));
 

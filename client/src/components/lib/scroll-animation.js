@@ -8,7 +8,7 @@ export const scrollAnimation = (position, target, onUpdate) => {
 
 
     tl.to(position, {
-        x: 1.1764597729,
+        x: 2.1664597729,
         y: 10.53455727,
         z: 7.3194134059,
         scrollTrigger: {

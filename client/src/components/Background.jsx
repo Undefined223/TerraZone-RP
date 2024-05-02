@@ -9,7 +9,7 @@ const Background = () => {
             <Starfield
                 starCount={4000}
                 speedFactor={0.08}
-                backgroundColor="#0C0037"
+                backgroundColor="black"
             />
         </div>
     );
