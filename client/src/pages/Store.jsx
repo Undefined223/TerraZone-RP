@@ -2,8 +2,6 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Background from '../components/Background'
 import { Box } from '@chakra-ui/react'
-import ListProducts from '../components/Store/ListProducts'
-import CreateProduct from '../components/Store/CreateProduct'
 const Store = () => {
   return (
     <div>
@@ -13,9 +11,7 @@ const Store = () => {
       
       <Box position='relative' display='flex' alignItems='center' height='20vh' >
 
-        <CreateProduct />
       </Box>
-      <ListProducts />
 
 
     </div>
